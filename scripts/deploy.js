@@ -6,7 +6,7 @@ const deploy = async () => {
 
   //getContractFactory take the information from the compilation cache
   const AndresPunks = await ethers.getContractFactory('AndresPunks');
-  const deployed = await AndresPunks.deploy();
+  const deployed = await AndresPunks.deploy(10000);
 
   console.log('AndresPunks Deployed:', deployed.address);
 };
